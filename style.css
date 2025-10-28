@@ -1,0 +1,139 @@
+/* Container */
+#container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: lightbeige;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  color: brown;
+}
+
+span {
+  color: #d2691e;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  background-color: #333;
+}
+
+nav ul > li {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  color: brown;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Link states */
+a:link {
+  color: white;
+}
+a:visited {
+  color: lightgray;
+}
+a:hover {
+  background-color: #ffcc99;
+  color: black;
+}
+a:active {
+  color: red;
+}
+
+/* Section background */
+.section {
+  background-color: rgb(245, 222, 179);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Headings */
+h2 {
+  color: darkgreen;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+/* Menu items */
+.menu-item {
+  color: chocolate;
+  font-style: italic;
+}
+
+/* Pseudo-classes */
+ul li:first-child,
+ol li:first-child {
+  color: red;
+}
+
+ul li:last-child,
+ol li:last-child {
+  background-color: lightgray;
+}
+
+/* Combinators */
+div p {
+  color: navy;
+}
+
+ul > li {
+  font-weight: bold;
+  color: brown;
+}
+
+h2 + p {
+  font-style: italic;
+  color: darkred;
+}
+
+h2 ~ p {
+  font-size: 14px;
+  color: gray;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 8px;
+}
+
+thead {
+  background-color: brown;
+  color: white;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

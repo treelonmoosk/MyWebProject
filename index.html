@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .container {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        gap: 10px;
+        }
+
+        .item1 {
+        background: lightcoral;
+        }
+
+        .item2 {
+        background: lightgreen;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        }
+    </style>
+
+<body>   
+    <fieldset id="fieldset1" >
+        <legend>customer information</legend>
+        <form id="survey"></form>
+        <input name="name" id="id" type="type" />
+        <label for="id">enter your name</label>
+    </fieldset>
+    <div class="formRow">
+      <label for="city">City</label>
+      <input name="custCity" id="city" type="text" placeholder="city name" />
+    </div>
+    <div class="formRow">
+      <label for="date">Current date</label>
+      <input name="visitDate" id="visit" type="date" />
+    </div>
+    <div class="formRow">
+      <label for="cars">Choose a car</label>
+      <select id="cars" name="cars" size="4" multiple>
+        <optgroup label="gas powered">  
+          <option value="ford">ford</option>
+          <option value="chevy">chevy</option>
+          <option value="gmc">gmc</option>
+        </optgroup>
+        <optgroup label="electric powered">
+          <option value="tesla">tesla</option>
+        </optgroup>  
+      </select>
+    </div>
+    <br>
+    <div class="formRow">
+      <label for="dish">What's your favourite dish?</label>
+      <input name="favDish" id="dish" type="text" list="dishType" />
+      <datalist id="dishType">
+        <option value="Antipasto Pizza" />
+        <option value="Hawaian Pizza" />
+        <option value="Meat Pizza" />
+        <option value="Vegan Pizza" />
+        <option value="Ice cream Pizza" />
+      </datalist>
+    </div>
+    <div class="formRow">
+      <label for="dineSpin">how many times per month</label>
+      <input name="dineOut" id="dineSpin" type="number" value="1" step="1" min="8" max="20" />
+    </div>
+    <div class="formRow">
+      <input type="range" step="2" min="1" max="100" value="50" class="slider" id="myRange" >
+    </div>
+    <br>
+    <div>
+      <input name="mailMe" id="mailCB" value="no" type="checkbox" />
+      <label for="mailCB">add me</label>
+      <input name="mailMe" id="mailCB" value="no" type="checkbox" />
+      <label for="mailCD">dont add me</label>
+    </div>
+
+  </body>
+
+<br>
+<div class="container">
+  <div class="item1">Box 1</div>
+  <div class="item2">Box 2
+    <p>This is a paragraph</p>
+  </div>
+</div>
+
+</html>
